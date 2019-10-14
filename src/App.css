@@ -1,0 +1,379 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  background: white;
+}
+
+a {
+  font-family: 'Fjalla One', sans-serif;
+  text-decoration: none;
+  color: red;
+  padding: 5px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 100%;
+  /* background-color: #F2EA01; */
+  background-color: white;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+
+header h1 {
+  align-self: flex-start;
+  font-family: 'Fjalla One', sans-serif;
+  padding-top: 0;
+  font-size: 1em;
+}
+
+footer {
+  bottom: 0;
+  height: 50px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  background-color: white;
+  /* background-color: #F9C10B; */
+  flex: 0 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  color: red;
+}
+
+h2 {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  color: red;
+  font-size: 2em;
+}
+
+i {
+  font-size: 50px;
+  padding: 2px;
+  color: red;
+}
+
+i:hover {
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+}
+
+li {
+  padding: 10px;
+  list-style-type: none;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+ul {
+  font-family: 'Fjalla One', sans-serif;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  list-style-type: none;
+  text-decoration: none;
+  color: red;
+  padding-bottom: 0;
+}
+
+p {
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.about {
+  text-align: center;
+  font-size: 2em;
+  padding-top: 2em;
+}
+
+.about-text {
+  text-align: center;
+  /* text-decoration: line-through; */
+  font-style: italic;
+  color: grey;
+  font-size: .50em;
+  margin: 0 auto;
+}
+
+.about-bodytext {
+  font-size: 1em;
+  font-family: 'Fjalla One', sans-serif;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.about_spacer {
+  margin-top: 30px;
+}
+
+.abstract {
+  display: block;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 28%;
+  width: 28%;
+}
+
+.active {
+  color: white;
+  background-color: red;
+  border-radius: 4px;
+}
+
+.App-wrapper {
+   min-height: 100%;
+   padding: 0 0 100px;
+   position: relative;
+}
+
+.current-link {
+    color: black;
+}
+
+.email {
+  display: inline;
+  padding: 0;
+  margin: 0;
+}
+
+.email:hover {
+  color: white;
+  background-color: red;
+  border-radius: 5px;
+}
+
+.footer {
+  bottom: 0;
+  height: 100px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+a.github_link, i.github_link {
+  display: inline-flex;
+  margin: 0 auto;
+  color: black;
+}
+
+.home {
+  text-align: center;
+}
+
+.icon-wrapper {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: 50px;
+  grid-template-areas:
+  "aabb"
+  "aabb";
+  /* align-items: stretch; */
+  width: 50%;
+  margin: 0 auto;
+}
+
+.item1 {
+  grid-area: b;
+}
+
+.navbar {
+  /* background-color: #F2EA01; */
+  display: block;
+  font-size: 1em;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.navbar a:hover {
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+}
+
+.navbar a.selected:link {
+  color: yellow;
+  background-color: red;
+}
+
+.projects a {
+  display: inline-flex;
+  color: black;
+}
+
+.projects-p {
+  text-align: center;
+  color: black;
+  margin-top: 0;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+}
+
+.project_images {
+  height: 50vh;
+  width: 100vw;
+}
+
+.spacer {
+  padding: 50px;
+}
+
+.takeout {
+  align: center;
+  width: 30%;
+  padding-top: 3%;
+}
+
+.tech-skills-header {
+  font-size: 1em;
+  color: black;
+  text-decoration: none;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  padding-top: 25px;
+}
+
+.title-header {
+  font-size: 3em;
+  font-family: 'Fjalla One', sans-serif;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 25px;
+  color: red;
+  position: fixed;
+}
+
+.title-subheader {
+  font-family: 'Fjalla One', sans-serif;
+  margin-top: 65px;
+  margin-left: 25px;
+  margin-bottom: 0;
+  position: fixed;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@media only screen and (max-device-width : 640px) {
+
+  header h1 {
+    align-self: flex-start;
+    font-family: 'Fjalla One', sans-serif;
+    padding-top: 0;
+    font-size: 2vw;
+  }
+
+  .about-bodytext {
+    font-size: 6vw;
+  }
+
+  .abstract {
+      height: 60%;
+      width: 60%;
+  }
+
+  .icon-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: 50px;
+    grid-template-areas:
+    "aabb"
+    "aabb";
+    /* align-items: stretch; */
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .project_images {
+    /* height: 50%; */
+    width: 100%;
+  }
+
+  .project_1.project_images, .project_2.project_images, .project_3.project_images, .project_4.project_images {
+    width: 100%;
+  }
+
+  .takeout {
+    align: center;
+    width: 50%;
+    padding-top: 3%;
+  }
+
+  .title-subheader {
+    padding-top: 100px;
+  }
+
+}
+
+@media only screen and (max-device-width: 768px) {
+
+  header h1 {
+    align-self: flex-start;
+    font-family: 'Fjalla One', sans-serif;
+    padding-top: 0;
+    font-size: 2vw;
+  }
+
+  .about-bodytext {
+    font-size: 6vw;
+  }
+
+  .abstract {
+      height: 60%;
+      width: 60%;
+  }
+
+  .icon-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: 50px;
+    grid-template-areas:
+    "aabb"
+    "aabb";
+    /* align-items: stretch; */
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .project_images {
+    height: 50%;
+    width: 100%;
+  }
+
+  .spacer {
+    padding-top: 150px;
+  }
+
+  .takeout {
+    align: center;
+    width: 50%;
+    padding-top: 3%;
+  }
+
+  .title-subheader {
+    padding-top: 100px;
+  }
+
+}
